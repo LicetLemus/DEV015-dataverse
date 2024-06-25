@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <title>TechGenius</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img class="logo" src="assets/logos/logo.svg" alt="Dataverse" />
+        <h2>TechGenius</h2>
+      </div>
+      <div class="hero-container">
+        <h1>Explora y Conquista las Tendencias Tecnológicas</h1>
+        <p class="introduction">
+          Descubre y domina las últimas tendencias tecnológicas. Explora
+          tecnologías por tipo de lenguaje o campo de aplicación, ordena
+          resultados y accede al ranking de lenguajes más populares. Limpia
+          filtros con un clic. TechGenius, tu puerta al futuro tecnológico.
+        </p>
+      </div>
+
+      <nav class="select-container">
+        <label for="type-select"></label>
+        <select name="type" id="type-select" data-testid="select-filter">
+          <option value="" disabled selected>Filtrar por tipo</option>
+          <option value="Language">Language</option>
+          <option value="Framework">Framework</option>
+          <option value="Markup">Markup</option>
+        </select>
+
+        <label for="applicationField-select"></label>
+        <select
+          name="applicationField"
+          id="applicationField-select"
+          data-testid="select-filter-2"
+        >
+          <option value="" disabled selected>Filtrar por aplicación</option>
+          <option value="Front-End">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Data">Data</option>
+        </select>
+
+        <label for="order-select"></label>
+        <select name="name" id="order-select" data-testid="select-sort">
+          <option value="" disabled selected>Ordenar</option>
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+
+        <button data-testid="button-clear">Limpiar</button>
+
+        <button class="metrics">
+          Ranking<img
+            src="assets/icons/ranking.svg"
+            height="16"
+            width="16"
+            alt="top icon"
+          />
+        </button>
+      </nav>
+    </header>
+    <main id="root"></main>
+    <script src="main.js" type="module"></script>
+    <footer>
+      <div class="logo-container-footer">
+        <img class="logo" src="assets/logos/logo-color.svg" alt="Dataverse" />
+        <h4>TechGenius</h4>
+      </div>
+      <div class="text-footer">
+        <p>
+          Desarrollado por
+          <a href="https://github.com/LicetLemus">Licet Lemus</a> y
+          <a href="https://github.com/abengl">Alessandra Godoy</a>
+        </p>
+        <p>&copy; Copyright 2024</p>
+      </div>
+      <div class="footer-block"></div>
+    </footer>
+  </body>
+</html>
